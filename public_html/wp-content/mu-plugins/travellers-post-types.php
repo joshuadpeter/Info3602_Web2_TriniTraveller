@@ -1,7 +1,7 @@
 <?php 
 function travellers_post_types(){
         register_post_type('tours',array(
-            'supports' => array('title', 'editor','excerpt'),
+            'supports' => array('title', 'editor','excerpt', 'thumbnail'),
             'rewrite'=> array('slug' => 'tours' ),
             'has_archive' => true,
             'public' => true, 
@@ -17,6 +17,7 @@ function travellers_post_types(){
         register_post_type('experiences',array(
             'supports' => array('title', 'editor', 'thumbnail'),
             'rewrite'=> array('slug' => 'experiences' ),
+            'has_archive' => true,
             'public' => true, 
             'labels' => array(
                 'name' => "Experiences",
